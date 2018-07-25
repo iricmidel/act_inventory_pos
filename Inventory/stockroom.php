@@ -10,6 +10,7 @@
       <link rel="stylesheet" type="text/css" href="../library/font-awesome/font/font.css">
       <link rel="stylesheet" type="text/css" href="../library/css/bulma.min.css">
       <link rel="stylesheet" type="text/css" href="../library/css/sidenav.css">
+      <link rel="stylesheet" type="text/css" href="../library/css/animation.css">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <script src="../library/js/ajax-3.1.1.js"></script>
@@ -35,19 +36,19 @@
 
             <li><a>Hi Admin!</a></li>
 
-    				<li><a href="#">Dashboard</a><span class="icon"><i class="material-icons">developer_board</i></span></li>
+    				<li><a href="dashboard.php">Dashboard</a><span class="icon"><i class="material-icons">developer_board</i></span></li>
 
-    				<li class ="is-active"><a href="#">Stockroom</a><span class="icon"><i class="material-icons">kitchen</i></span></li>
+    				<li class ="is-active"><a href="stockroom.php">Stockroom</a><span class="icon"><i class="material-icons">kitchen</i></span></li>
 
-    				<li><a href="#">Products</a><span class="icon"><i class="material-icons">local_dining</i></span></li>
+    				<li><a href="products.php">Products</a><span class="icon"><i class="material-icons">local_dining</i></span></li>
 
-            <li><a href="#">Sales</a><span class="icon"><i class="material-icons">attach_money</i></span></li>
+            <li><a href="sales.php">Sales</a><span class="icon"><i class="material-icons">attach_money</i></span></li>
 
-            <li><a href="#">Reports</a><span class="icon"><i class="material-icons">filter_none</i></span></li>
+            <li><a href="reports.php">Reports</a><span class="icon"><i class="material-icons">filter_none</i></span></li>
 
-            <li><a href="#">Settings</a><span class="icon"><i class="material-icons">graphic_eq</i></span></li>
+            <li><a href="settings.php">Settings</a><span class="icon"><i class="material-icons">graphic_eq</i></span></li>
 
-            <li><a href="#">Logout</a><span class="icon"><i class="material-icons">exit_to_app</i></span></li>
+            <li><a href="logout.php">Logout</a><span class="icon"><i class="material-icons">exit_to_app</i></span></li>
 
     			</ul>
 
@@ -61,39 +62,32 @@
       <nav class="bd-tabs">
           <div class="tabs navbar-start">
             <ul>
-
                 <li>
-                  <a href="#">
-                    Stockroom
+                  <a href="stocks.php">
+                    Stocks
                   </a>
                 </li>
-
                 <li class="is-active">
-                  <a href="#">
+                  <a href="stockroom.php">
                     Item List
                   </a>
                 </li>
-
                 <li>
                   <a href="#" id="showModal">
                     Add New Item
                   </a>
                 </li>
-
                 <li>
-                  <a href="#">
+                  <a href="print.php">
                     Printable Report
                   </a>
                 </li>
-
             </ul>
           </div>
-      </nav>
-    </div>
+        </nav>
 
      <div id="main">
-
-        <h4 class="title"> Item List Summary </h4>
+      <h4 class="title"> Item List Summary </h4>
         <div class="columns">
           <div class="column">
             <div class="control">
@@ -105,26 +99,21 @@
               <input class="input is-active" type="text" placeholder="Name">
             </div>
           </div>
-
           <div class="column">
             <div class="control">
               <input class="input is-active" type="text" placeholder="Category">
             </div>
           </div>
-
           <div class="column">
             <div class="control">
               <input class="input is-active" type="text" placeholder="Tag">
             </div>
           </div>
-
           <div class="column">
             <div class="control">
               <button class="button is-warning is-fullwidth">Filter</button>
             </div>
           </div>
-
-
         </div>
         <table class="table">
           <thead>
@@ -148,7 +137,6 @@
           </thead>
           <tfoot>
             <tr>
-
             </tr>
           </tfoot>
           <tbody>
@@ -385,17 +373,18 @@
 
           </tbody>
         </table>
+      </div>
     </div>
 
     <div class="modal">
       <div class="modal-background"></div>
-      <div class="modal-card">
+      <div class="modal-card animated fadeInDown">
         <header class="modal-card-head">
           <p class="modal-card-title level-item has-text-centered">Add New Item</p>
         </header>
         <section class="modal-card-body">
           <!-- Content ... -->
-          <label class="label">PRODUCT IMAGE</label>
+          <label class="label">ITEM IMAGE</label>
           <div class="file has-name is-fullwidth">
             <label class="file-label">
               <input class="file-input" type="file" name="resume">
@@ -428,6 +417,12 @@
                 </div>
               </div>
               <div class="field">
+                <label class="label">$StUnit is equivalent to</label>
+                <div class="control">
+                  <input class="input" type="text">
+                </div>
+              </div>
+              <div class="field">
                 <label class="label">BARCODE</label>
                 <div class="control">
                   <input class="input" type="text">
@@ -442,17 +437,29 @@
                 </div>
               </div>
               <div class="field">
-                <label class="label">CATEGORY</label>
+                <label class="label">PURCHASING UNIT OF MEASURE</label>
                 <div class="control">
                   <input class="input" type="text">
                 </div>
               </div>
               <div class="field">
-                <label class="label">TAGS (3 Max, Separated by Comma)</label>
+                <label class="label">$PurUnit</label>
                 <div class="control">
                   <input class="input" type="text">
                 </div>
               </div>
+              <div class="field">
+                <label class="label">CATEGORY</label>
+                <div class="control">
+                  <input class="input" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">TAGS (3 Max, Separated by Comma)</label>
+            <div class="control">
+              <input class="input" type="text">
             </div>
           </div>
         </section>
