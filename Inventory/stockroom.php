@@ -101,12 +101,12 @@
           </div>
           <div class="column">
             <div class="control">
-              <input class="input is-active" type="text" placeholder="Category">
+              <input class="input is-active" type="text" placeholder="Category and Tags">
             </div>
           </div>
           <div class="column">
             <div class="control">
-              <input class="input is-active" type="text" placeholder="Tag">
+              <input class="input is-active" type="text" placeholder="Distributor">
             </div>
           </div>
           <div class="column">
@@ -402,14 +402,14 @@
             </label>
           </div>
           <br>
+          <div class="field">
+            <label class="label">ITEM NAME</label>
+            <div class="control">
+              <input class="input" type="text">
+            </div>
+          </div>
           <div class="columns">
             <div class="column">
-              <div class="field">
-                <label class="label">ITEM NAME</label>
-                <div class="control">
-                  <input class="input" type="text">
-                </div>
-              </div>
               <div class="field">
                 <label class="label">STANDARD UNIT OF MEASURE</label>
                 <div class="control">
@@ -430,12 +430,6 @@
               </div>
             </div>
             <div class="column">
-              <div class="field">
-                <label class="label">ITEM ID (Automated)</label>
-                <div class="control">
-                  <input class="input" type="text">
-                </div>
-              </div>
               <div class="field">
                 <label class="label">PURCHASING UNIT OF MEASURE</label>
                 <div class="control">
@@ -471,7 +465,7 @@
     </div>
 
     <script src="../library/js/sidenav.js"></script>
-    <script src="../library/js/stockroom.js"></script>
+    <script src="../library/js/modal.js"></script>
 
   </body>
 

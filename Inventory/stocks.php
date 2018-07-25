@@ -74,7 +74,12 @@
                 </li>
                 <li>
                   <a href="#" id="showModal">
-                    Create New Stockage
+                    Stock In
+                  </a>
+                </li>
+                <li>
+                  <a href="#" id="showModalStockOut">
+                    Stock Out
                   </a>
                 </li>
                 <li>
@@ -91,22 +96,39 @@
         <div class="columns">
           <div class="column">
             <div class="control">
-              <input class="input is-active" type="text" placeholder="Stock ID">
+              <input class="input is-active" type="text" placeholder="Date Start">
             </div>
           </div>
           <div class="column">
             <div class="control">
-              <input class="input is-active" type="text" placeholder="Name">
+              <input class="input is-active" type="text" placeholder="Date Until">
             </div>
           </div>
           <div class="column">
             <div class="control">
-              <input class="input is-active" type="text" placeholder="Category">
+              <input class="input is-active" type="text" placeholder="Receipt/Order Number">
             </div>
           </div>
           <div class="column">
             <div class="control">
-              <input class="input is-active" type="text" placeholder="Tag">
+              <input class="input is-active" type="text" placeholder="Created by">
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <div class="control">
+              <input class="input is-active" type="text" placeholder="Item Name">
+            </div>
+          </div>
+          <div class="column">
+            <div class="control">
+              <input class="input is-active" type="text" placeholder="Distributor">
+            </div>
+          </div>
+          <div class="column">
+            <div class="control">
+              <input class="input is-active" type="text" placeholder="Category and Tag">
             </div>
           </div>
           <div class="column">
@@ -119,17 +141,20 @@
           <thead>
             <tr>
               <th>
+               Type
+              </th>
+              <th>
                 <abbr title="Stock ID"> ID </abbr>
               </th>
               <th> Date </th>
-              <th> Receipt </th>
+              <th> Receipt/Order Number </th>
               <th> Item Name </th>
               <th> Quantity </th>
-              <th> Distributor </th>
+              <th> Distributor / Recipient </th>
               <th> Expiration Date </th>
               <th> Notes </th>
               <th> On Stock Change </th>
-              <th> Stocked by </th>
+              <th> Created by </th>
               <th> Cost </ht>
 
               <th></th>
@@ -142,8 +167,9 @@
           </tfoot>
           <tbody>
             <tr>
+              <th class="is-info"> In </th>
               <th> 900001 </th>
-              <td> 01/01/01 </td>
+              <td> 01/01/01 2:00 pm </td>
 
               <td><a>123456</a></td>
               <td><a>Torani Apple Syrup - 500ml</a></td>
@@ -157,10 +183,28 @@
               <td> P2500 </a>
               </td>
               <td>
-                <a class="button is-warning is-rounded is-small">Edit Details</a>
+                <a class="button is-danger is-rounded is-small">Revert</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="is-danger"> Out </th>
+              <th> 900001 </th>
+              <td> 01/01/01 1:00 pm </td>
+
+              <td><a>123456</a></td>
+              <td><a>Torani Apple Syrup - 500ml</a></td>
+              <td> 25 bot </td>
+
+              <td>PJDoms Cafe Supply</td>
+              <td> 02/02/02 </td>
+              <td> Extra Bottles for the month </td>
+              <td> 25 -> 0 </td>
+              <td> Admin Doc </td>
+              <td> </a>
               </td>
               <td>
-                <a class="button is-danger is-rounded is-small">Delete</a>
+                <a class="button is-danger is-rounded is-small">Revert</a>
               </td>
             </tr>
 
@@ -173,7 +217,7 @@
       <div class="modal-background"></div>
       <div class="modal-card animated fadeInDown">
         <header class="modal-card-head">
-          <p class="modal-card-title level-item has-text-centered">Create New Stockage  </p>
+          <p class="modal-card-title level-item has-text-centered">Stock In</p>
         </header>
         <section class="modal-card-body">
           <!-- Content ... -->
@@ -239,8 +283,66 @@
       </div>
     </div>
 
+    <div class="modal2">
+      <div class="modal-background"></div>
+      <div class="modal-card animated fadeInDown">
+        <header class="modal-card-head">
+          <p class="modal-card-title level-item has-text-centered">Stock Out</p>
+        </header>
+        <section class="modal-card-body">
+          <!-- Content ... -->
+          <div class="columns">
+            <div class="column">
+              <div class="field">
+                <label class="label">ITEM NAME</label>
+                <div class="control">
+                  <input class="input" type="text">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label"> QUANTIY ($PurUnit)</label>
+                <div class="control">
+                  <input class="input" type="text">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">ORDER NUMBER</label>
+                <div class="control">
+                  <input class="input" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="field">
+                <label class="label">DATETIME (EDITABLE?)</label>
+                <div class="control">
+                  <input class="input" type="text">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">RECIPIENT</label>
+                <div class="control">
+                  <input class="input" type="text">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">NOTES</label>
+                <div class="control">
+                  <input class="input" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="modal-card-foot">
+            <button class="button is-warning">Save changes</button>
+            <button class="button is-danger">Cancel</button>
+        </footer>
+      </div>
+    </div>
+
     <script src="../library/js/sidenav.js"></script>
-    <script src="../library/js/stockroom.js"></script>
+    <script src="../library/js/modal.js"></script>
 
   </body>
 

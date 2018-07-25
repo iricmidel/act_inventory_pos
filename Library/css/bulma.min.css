@@ -149,7 +149,7 @@
   width: 1em;
 }
 
-.is-overlay, .image.is-square img, .image.is-1by1 img, .image.is-5by4 img, .image.is-4by3 img, .image.is-3by2 img, .image.is-5by3 img, .image.is-16by9 img, .image.is-2by1 img, .image.is-3by1 img, .image.is-4by5 img, .image.is-3by4 img, .image.is-2by3 img, .image.is-3by5 img, .image.is-9by16 img, .image.is-1by2 img, .image.is-1by3 img, .modal, .modal-background, .hero-video {
+.is-overlay, .image.is-square img, .image.is-1by1 img, .image.is-5by4 img, .image.is-4by3 img, .image.is-3by2 img, .image.is-5by3 img, .image.is-16by9 img, .image.is-2by1 img, .image.is-3by1 img, .image.is-4by5 img, .image.is-3by4 img, .image.is-2by3 img, .image.is-3by5 img, .image.is-9by16 img, .image.is-1by2 img, .image.is-1by3 img, .modal, .modal-background,.modal2, .modal2-background, .hero-video {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -286,6 +286,7 @@ iframe {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  font-size: 0.85em;
 }
 
 td,
@@ -5890,7 +5891,19 @@ a.dropdown-item.is-active {
   z-index: 40;
 }
 
+.modal2 {
+  align-items: center;
+  display: none;
+  justify-content: center;
+  overflow: hidden;
+  position: fixed;
+  z-index: 40;
+}
+
 .modal.is-active {
+  display: flex;
+}
+.modal2.is-active {
   display: flex;
 }
 
