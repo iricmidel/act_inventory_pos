@@ -38,7 +38,7 @@
 
     				<li><a href="dashboard.php">Dashboard</a><span class="icon"><i class="material-icons">developer_board</i></span></li>
 
-    				<li class ="is-active"><a href="stockroom.php">Stockroom</a><span class="icon"><i class="material-icons">kitchen</i></span></li>
+    				<li><a href="stockroom.php">Stockroom</a><span class="icon"><i class="material-icons">kitchen</i></span></li>
 
     				<li><a href="products.php">Products</a><span class="icon"><i class="material-icons">local_dining</i></span></li>
 
@@ -111,14 +111,14 @@
           </div>
           <div class="column">
             <div class="control">
-              <input class="input is-active" type="text" placeholder="Created by">
+              <input class="input is-active" type="text" placeholder="Type">
             </div>
           </div>
         </div>
         <div class="columns">
           <div class="column">
             <div class="control">
-              <input class="input is-active" type="text" placeholder="Item Name">
+              <input class="input is-active" type="text" placeholder="Item Name or Category">
             </div>
           </div>
           <div class="column">
@@ -128,7 +128,7 @@
           </div>
           <div class="column">
             <div class="control">
-              <input class="input is-active" type="text" placeholder="Category and Tag">
+              <input class="input is-active" type="text" placeholder="Created by">
             </div>
           </div>
           <div class="column">
@@ -137,7 +137,7 @@
             </div>
           </div>
         </div>
-        <table class="table">
+        <table class="table is-fullwidth">
           <thead>
             <tr>
               <th>

@@ -62,19 +62,19 @@
       <nav class="bd-tabs">
           <div class="tabs navbar-start">
             <ul>
-                <li>
-                  <a href="stocks.php">
-                    Stocks
-                  </a>
-                </li>
                 <li class="is-active">
-                  <a href="stockroom.php">
-                    Item List
+                  <a href="products.php">
+                    Products
                   </a>
                 </li>
                 <li>
                   <a href="#" id="showModal">
-                    Add New Item
+                    Create New Product
+                  </a>
+                </li>
+                <li>
+                  <a href="product_categories.php">
+                    Product Categories
                   </a>
                 </li>
                 <li>
@@ -101,7 +101,7 @@
           </div>
           <div class="column">
             <div class="control">
-              <input class="input is-active" type="text" placeholder="Item Category">
+              <input class="input is-active" type="text" placeholder="Category and Tags">
             </div>
           </div>
           <div class="column">
@@ -115,55 +115,6 @@
             </div>
           </div>
         </div>
-        <table class="table is-fullwidth">
-          <thead>
-            <tr>
-              <th>
-                <abbr title="Item ID"> ID </abbr>
-              </th>
-              <th> Name </th>
-              <th> Last Distributor </th>
-              <th> Item Category </th>
-              <th> Barcode </th>
-              <th> <abbr title="Standard Unit of Measure"> StUnit </th>
-              <th> <abbr title="Purchasing Unit of Measure"> PurUnit </th>
-              <th> <abbr title="Sales Unit of Measure"> SaleUnit </th>
-              <th> On Stock </th>
-              <th> Last Stockage</th>
-              <th></th>
-              <th></th>
-            </tr>
-          </thead>
-          <tfoot>
-            <tr>
-            </tr>
-          </tfoot>
-          <tbody>
-            <tr>
-              <th> 100001 </th>
-              <td>Torani Apple Syrup - 500ml</td>
-              <td>PJDoms Cafe Supply</td>
-              <td>Syrup</td>
-              <td> 121212121 </td>
-              <td> bot </td>
-              <td> bot </td>
-              <td> bot, ml </td>
-              <td>
-                <a href="#"> 5 bot </a>
-              </td>
-              <td>
-                <a href="#"> Jan, 25, 2018 </a>
-              </td>
-              <td>
-                <a class="button is-warning is-rounded is-small">Edit Details</a>
-              </td>
-              <td>
-                <a class="button is-danger is-rounded is-small">Delete</a>
-              </td>
-            </tr>
-
-          </tbody>
-        </table>
       </div>
     </div>
 
