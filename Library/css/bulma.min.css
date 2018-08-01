@@ -3188,7 +3188,7 @@ a.box:active {
 }
 
 .select select {
-  background-color: transparent;
+  background-color: #292c3e;
   border-color: #6c64ff;
   color: #ffffff;
   cursor: pointer;

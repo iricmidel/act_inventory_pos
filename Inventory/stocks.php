@@ -93,6 +93,7 @@
 
      <div id="main">
       <h4 class="title"> Stock History </h4>
+
         <div class="columns">
           <div class="column">
             <div class="control">
@@ -115,6 +116,7 @@
             </div>
           </div>
         </div>
+
         <div class="columns">
           <div class="column">
             <div class="control">
@@ -137,6 +139,7 @@
             </div>
           </div>
         </div>
+
         <table class="table is-fullwidth">
           <thead>
             <tr>
@@ -210,6 +213,7 @@
 
           </tbody>
         </table>
+
       </div>
     </div>
 
