@@ -68,7 +68,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#" id="showModal">
+                  <a href="create_new_product.php">
                     Create New Product
                   </a>
                 </li>
@@ -87,26 +87,31 @@
         </nav>
 
      <div id="main">
-      <h4 class="title"> Item List Summary </h4>
+      <h4 class="title"> Product List Summary </h4>
         <div class="columns">
           <div class="column">
             <div class="control">
-              <input class="input is-active" type="text" placeholder="ID">
+              <input class="input is-active" type="text" placeholder="Product ID">
             </div>
           </div>
           <div class="column">
             <div class="control">
-              <input class="input is-active" type="text" placeholder="Name">
+              <input class="input is-active" type="text" placeholder="Product Name">
             </div>
           </div>
           <div class="column">
             <div class="control">
-              <input class="input is-active" type="text" placeholder="Category and Tags">
+              <input class="input is-active" type="text" placeholder="Product Category">
             </div>
           </div>
           <div class="column">
             <div class="control">
-              <input class="input is-active" type="text" placeholder="Distributor">
+              <input class="input is-active" type="text" placeholder="Cost">
+            </div>
+          </div>
+          <div class="column">
+            <div class="control">
+              <input class="input is-active" type="text" placeholder="Selling Price">
             </div>
           </div>
           <div class="column">
@@ -115,94 +120,97 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-card animated fadeInDown">
-        <header class="modal-card-head">
-          <p class="modal-card-title level-item has-text-centered">Add New Item</p>
-        </header>
-        <section class="modal-card-body">
-          <!-- Content ... -->
-          <label class="label">ITEM IMAGE</label>
-          <div class="file has-name is-fullwidth">
-            <label class="file-label">
-              <input class="file-input" type="file" name="resume">
-              <span class="file-cta">
-                <span class="file-icon">
-                  <i class="fas fa-upload"></i>
-                </span>
-                <span class="file-label">
-                  Choose a file…
-                </span>
-              </span>
-              <span class="file-name">
-                Screen Shot 2017-07-29 at 15.54.25.png
-              </span>
-            </label>
-          </div>
-          <br>
-          <div class="field">
-            <label class="label">ITEM NAME</label>
-            <div class="control">
-              <input class="input" type="text">
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column">
-              <div class="field">
-                <label class="label">STANDARD UNIT OF MEASURE</label>
-                <div class="control">
-                  <input class="input" type="text">
-                </div>
-              </div>
-              <div class="field">
-                <label class="label">$StUnit is equivalent to</label>
-                <div class="control">
-                  <input class="input" type="text">
-                </div>
-              </div>
-              <div class="field">
-                <label class="label">BARCODE</label>
-                <div class="control">
-                  <input class="input" type="text">
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="field">
-                <label class="label">PURCHASING UNIT OF MEASURE</label>
-                <div class="control">
-                  <input class="input" type="text">
-                </div>
-              </div>
-              <div class="field">
-                <label class="label">$PurUnit</label>
-                <div class="control">
-                  <input class="input" type="text">
-                </div>
-              </div>
-              <div class="field">
-                <label class="label">CATEGORY</label>
-                <div class="control">
-                  <input class="input" type="text">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="field">
-            <label class="label">TAGS (3 Max, Separated by Comma)</label>
-            <div class="control">
-              <input class="input" type="text">
-            </div>
-          </div>
-        </section>
-        <footer class="modal-card-foot">
-            <button class="button is-warning">Save changes</button>
-            <button class="button is-danger">Cancel</button>
-        </footer>
+        <table class="table is-fullwidth">
+          <thead>
+            <tr>
+              <th> Image </th>
+              <th> Name </th>
+              <th>
+                <abbr title="Product ID"> ID </abbr>
+              </th>
+              <th> Product Category </th>
+              <th> <abbr title="Sales Unit of Measure"> SaleUnit </th>
+              <th> Cost </th>
+              <th> Selling Price </th>
+              <th> Markup </th>
+              <th> Availability </th>
+              <th> Variations </th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <th><figure class="image is-64x64">
+                <img src="../Assets/images/caramel_coffee.jpeg">
+              </figure></th>
+              <th> Caramel Coffee 250ml </th>
+              <td>200001</td>
+              <td>Drinks / Coffee / With Milk</td>
+              <td> cup </td>
+              <td> P50.00 </td>
+              <td> P100.00 </td>
+              <td> 100% </td>
+              <td> Ingredients Available (20) </td>
+              <td> Cold, Hot </td>
+              <td>
+                <a class="button is-warning is-rounded is-small">Edit Details</a>
+              </td>
+              <td>
+                <a class="button is-danger is-rounded is-small">Delete</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th><figure class="image is-64x64">
+                <img src="../Assets/images/caramel_coffee.jpeg">
+              </figure></th>
+              <th> Caramel Coffee 500ml </th>
+              <td>200002</td>
+              <td>Drinks / Coffee / With Milk</td>
+              <td> cup </td>
+              <td> P100.00 </td>
+              <td> P200.00 </td>
+              <td> 100% </td>
+              <td> Ingredients Available (10) </td>
+              <td> Cold, Hot </td>
+              <td>
+                <a class="button is-warning is-rounded is-small">Edit Details</a>
+              </td>
+              <td>
+                <a class="button is-danger is-rounded is-small">Delete</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th><figure class="image is-64x64">
+                <img src="../Assets/images/torani.jpeg">
+              </figure></th>
+              <th> Torani Apple 500ml </th>
+              <td>200003</td>
+              <td>Stockroom Item / Syrup</td>
+              <td> bot </td>
+              <td> P500.00 </td>
+              <td> P1500.00 </td>
+              <td> 200% </td>
+              <td> Available in Stockroom (20) </td>
+              <td>  </td>
+              <td>
+                <a class="button is-warning is-rounded is-small">Edit Details</a>
+              </td>
+              <td>
+                <a class="button is-danger is-rounded is-small">Delete</a>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
       </div>
     </div>
 
