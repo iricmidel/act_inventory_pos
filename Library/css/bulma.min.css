@@ -286,7 +286,7 @@ iframe {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 td,
@@ -3188,7 +3188,7 @@ a.box:active {
 }
 
 .select select {
-  background-color: #292c3e;
+  background-color: transparent;
   border-color: #6c64ff;
   color: #ffffff;
   cursor: pointer;
@@ -4976,6 +4976,7 @@ a.box:active {
 .tag:not(body).is-warning {
   background-color: #ffdd57;
   color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 0.5rem;
 }
 
 .tag:not(body).is-danger {
@@ -5082,6 +5083,13 @@ a.tag:hover {
 .title {
   color: #ffffff;
   font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.125;
+}
+
+.orderitem {
+  color: #ffffff;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.125;
 }
@@ -5299,6 +5307,7 @@ a.tag:hover {
 
 .card {
   background-color: #1a1e30;
+  border-radius: 10px;
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
   color: #ffffff;
   max-width: 100%;
@@ -5993,7 +6002,7 @@ a.dropdown-item.is-active {
 }
 
 .navbar {
-  background-color: white;
+  background-color: #292c3e;
   min-height: 3.25rem;
   position: relative;
   z-index: 30;
@@ -9684,3 +9693,11 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 /*# sourceMappingURL=bulma.css.map */
+
+.order {
+  background-color: #1a1e30;
+}
+
+.order-total {
+  color: #6c64ff;
+}

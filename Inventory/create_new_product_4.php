@@ -104,19 +104,50 @@
 
       </div>
       <center>
-      <span class="tag is-info">Variation should not affect the price and listed ingredients of the product.</span>
+      <span class="tag is-info">Variety is the modification you can apply to this product. This may affect ingredients and prices.</span>
       </center>
       </br>
       <div class="columns">
         <div class="column">
         </div>
         <div class="column">
+          <table class="table is-fullwidth">
+            <thead>
+              <tr>
+                <th colspan="3">
+                  <div class="field">
+                    <div class="control">
+                      <input class="input is-fullwidth" type="text" placeholder="Default Variety">
+                    </div>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+          </table>
+
+          <a class="button is-warning is-rounded">Add Variety</a>
+          </br>
+          </br>
+
           <table class="table">
             <thead>
               <tr>
-                <th> Variety Name </th>
-                <th> On by Default </th>
-                <th></th>
+                <th colspan="2">
+                  <div class="field">
+                    <div class="control">
+                      <input class="input is-fullwidth" type="text" placeholder="New Variety">
+                    </div>
+                  </div>
+                </th>
+                <th>
+                  <div class="field">
+                    <div class="control">
+                      <input class="input is-fullwidth" type="text" placeholder="+ Price">
+                    </div>
+                  </div>
+                </th>
+
+                <th><a class="button is-danger is-rounded is-small level-right">Delete Variety</a></th>
               </tr>
             </thead>
             <tfoot>
@@ -126,46 +157,40 @@
             <tbody>
               <tr>
                 <th>
-                  <div class="field">
-                    <div class="control">
-                      <input class="input" type="text" value="Hot">
-                    </div>
-                  </div>
+                  Ingredient Modification
                 </th>
                 <td>
-                  <div class="select">
-                    <select>
-                      <option>Yes</option>
-                      <option>No</option>
-                    </select>
-                  </div>
+                  Quantity
                 </td>
                 <td>
-                  <a class="button is-danger is-rounded">Remove</a>
+                  Standard Unit
+                </td>
+                <td>
                 </td>
               </tr>
               <tr>
                 <th>
-                  <div class="field">
-                    <div class="control">
-                      <input class="input" type="text" value="Cold">
-                    </div>
+                  <div class="select">
+                    <select>
+                      <option>Coffee Bean 1</option>
+                      <option>Milk</option>
+                    </select>
                   </div>
                 </th>
                 <td>
-                  <div class="select">
-                    <select>
-                      <option>No</option>
-                      <option>Yes</option>
-                    </select>
+                  <div class="field">
+                    <div class="control">
+                      <input class="input" type="text" value="10">
+                    </div>
                   </div>
                 </td>
+                <td> g </td>
                 <td>
-                  <a class="button is-danger is-rounded">Remove</a>
+                  <a class="button is-danger is-small is-rounded">Remove</a>
                 </td>
               </tr>
               <tr>
-                <td><a class="button is-warning is-rounded">Add Variety</a></td>
+                <td><a class="button is-info is-rounded is-small">Add Ingredient</a></td>
               </tr>
             </tbody>
           </table>

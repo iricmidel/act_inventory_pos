@@ -104,7 +104,7 @@
       </div>
 
       <center>
-      <span class="tag is-info">List items that are used in creating the product. You can only list items found in the stockroom</span>
+      <span class="tag is-info">List items that are used in creating the base product without modifications</span>
       </center>
       </br>
 

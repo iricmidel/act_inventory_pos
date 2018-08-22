@@ -62,7 +62,7 @@
       <nav class="bd-tabs">
           <div class="tabs navbar-start">
             <ul>
-                <li class="is-active">
+                <li>
                   <a href="products.php">
                     Products
                   </a>

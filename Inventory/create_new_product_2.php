@@ -130,7 +130,7 @@
             </div>
             <span class="tag is-info">Add an estimated single cost to estimate margin.</span>
             <div class="control">
-              <input class="input is-active" type="text" placeholder="Cost on creating the product">
+              <input class="input is-active" type="text" placeholder="Cost of the base product">
             </div>
           </div>
         </div>
@@ -147,7 +147,7 @@
             </div>
             <span class="tag is-info">How much do you sell this product?</span>
             <div class="control">
-              <input class="input is-active" type="text" placeholder="Selling Price of the Product">
+              <input class="input is-active" type="text" placeholder="Selling Price of the base product">
             </div>
           </div>
         </div>

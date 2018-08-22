@@ -11,7 +11,6 @@
       <link rel="stylesheet" type="text/css" href="../library/css/bulma.min.css">
       <link rel="stylesheet" type="text/css" href="../library/css/sidenav.css">
       <link rel="stylesheet" type="text/css" href="../library/css/animation.css">
-
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <script src="../library/js/ajax-3.1.1.js"></script>
